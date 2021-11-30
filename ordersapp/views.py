@@ -1,9 +1,7 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.db import transaction
 from django.forms import inlineformset_factory
-from django.shortcuts import HttpResponseRedirect, get_object_or_404
+from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 from django.views.generic.detail import DetailView
