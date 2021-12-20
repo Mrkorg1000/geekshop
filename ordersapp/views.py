@@ -137,6 +137,7 @@ def product_quantity_update_save(instance, sender, **kwargs):
 
 from django.db.models import F
 
+
 @receiver(pre_delete, sender=OrderItem)
 @receiver(pre_delete, sender=Basket)
 def product_quantity_update_delete(instance, **kwargs):
